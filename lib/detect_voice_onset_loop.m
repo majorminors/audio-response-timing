@@ -126,7 +126,7 @@ if produce_plot
     h=figure;
     plot(res)
     xlabel('soundfiles')
-    ylabel('milliseconds')
+    ylabel('seconds')
     xlim([1 length(res)])
     if exist('customYlim','var'); ylim([0 customYlim]); end
     hold on

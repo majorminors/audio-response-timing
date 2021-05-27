@@ -53,8 +53,8 @@ p.save_plot = 0; % save the plot it produces
 % audio processing settings
 p.beginFreq = 125; % bandpath filter frequency from
 p.endFreq = 11000; % bandpath filter frequency to
-p.thresh4 = 0.1; % threshold
-p.startvalue = 0; % skip range for first detection (ms)
+p.thresh4 = 0.1; % threshold (percent change in signal variability)
+p.startvalue = 0; % skip range for first detection (ms) (e.g. don't pay attention to changes in first 100ms)
 p.stepw = 100; % stepwidth for calculating rolling SD (in samples)
 
 % directory mapping
